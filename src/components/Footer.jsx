@@ -4,11 +4,11 @@ import Logo from "../assets/logo2.png"
 
 function Footer() {
   return (
-    <footer className="bg-white py-4 px-10 h-fit flex flex-col md:flex-row items-center justify-between">
+    <footer className="bg-white py-4 px-10 h-fit flex flex-col md:flex-row items-start md:items-center justify-between">
     <a href='/' >
     <img
       src={Logo}
-      className='h-[170px] aspect-auto cursor-pointer'
+      className=' h-[70px] md:h-[170px] aspect-auto cursor-pointer'
       />
       </a>
 
