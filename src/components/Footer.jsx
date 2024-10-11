@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/logo2.png";
 
 function Footer() {
@@ -14,46 +14,67 @@ function Footer() {
 
       <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
         <li>
-          <Link to="/" className="text-[#73026b] hover:text-gray-400">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+            }
+          >
             Home
-          </Link>
+          </NavLink>
         </li>
+
         <li>
-          <Link to="/offering" className="text-black hover:text-gray-400">
+          <NavLink
+            to="/offering"
+            className={({ isActive }) =>
+              isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+            }
+          >
             Offering
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about" className="text-black hover:text-gray-400">
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+            }
+          >
             About
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/contact" className="text-black hover:text-gray-400">
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </li>
       </ul>
 
       <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
         <li>
-          <a href="#" className="text-[#73026b] hover:text-gray-400">
+          <a href="#" className="text-black hover:text-[#73026b]">
             Facebook
           </a>
         </li>
         <li>
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black hover:text-[#73026b]">
             Twitter
           </a>
         </li>
         <li>
-          <a href="#" className="text-black hover:text-gray-400">
+          <a href="#" className="text-black hover:text-[#73026b]">
             Instagram
           </a>
         </li>
         <li>
-          <a href="#" className="text-black hover:text-gray-400">
-            Linkedin
+          <a href="#" className="text-black hover:text-[#73026b]">
+            NavLinkedin
           </a>
         </li>
       </ul>

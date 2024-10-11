@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
@@ -19,24 +19,44 @@ function Navbar() {
         {/* Links for Desktop */}
         <ul className="hidden md:flex flex-row text-[15px] font-bold justify-start gap-5">
           <li>
-            <Link to="/" className="text-black hover:text-gray-400">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/offering" className="text-black hover:text-gray-400">
+            <NavLink
+              to="/offering"
+              className={({ isActive }) =>
+                isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+              }
+            >
               Offering
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/about" className="text-black hover:text-gray-400">
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+              }
+            >
               About
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact" className="text-black hover:text-gray-400">
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive ? "text-[#73026b]" : "text-black hover:text-[#73026b]"
+              }
+            >
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
 
@@ -68,69 +88,70 @@ function Navbar() {
 
       {/* Mobile Navigation */}
 
-        <nav
-          onClick={toggleMobileNav}
-          className={`bg-white shadow-md md:hidden absolute left-0 right-0 transition-all duration-1000 ${openMobileNav ? "top-[128px]" : "top-[-100%]"}`}
-        >
-          <div className="flex flex-col items-center py-4 px-8 w-full">
-            <ul className="space-y-4 w-full">
-              <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link
-                  to="/"
-                  className="text-black leading-10  hover:text-[#73026b]"
-                >
-                  Home
-                </Link>
-              </li>
-              <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link
-                  to="/offering"
-                  className="text-black leading-10 hover:text-[#73026b]"
-                >
-                  Offering
-                </Link>
-              </li>
-              <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link
-                  to="/about"
-                  className="text-black leading-10 hover:text-[#73026b]"
-                >
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="text-black leading-10 hover:text-[#73026b]"
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <nav
+        onClick={toggleMobileNav}
+        className={`bg-white shadow-md md:hidden absolute left-0 right-0 transition-all duration-1000 ${
+          openMobileNav ? "top-[128px]" : "top-[-100%]"
+        }`}
+      >
+        <div className="flex flex-col items-center py-4 px-8 w-full">
+          <ul className="space-y-4 w-full">
+            <li className="w-full border-b-[1px] border-b-gray-200">
+              <Link
+                to="/"
+                className="text-black leading-10  hover:text-[#73026b]"
+              >
+                Home
+              </Link>
+            </li>
+            <li className="w-full border-b-[1px] border-b-gray-200">
+              <Link
+                to="/offering"
+                className="text-black leading-10 hover:text-[#73026b]"
+              >
+                Offering
+              </Link>
+            </li>
+            <li className="w-full border-b-[1px] border-b-gray-200">
+              <Link
+                to="/about"
+                className="text-black leading-10 hover:text-[#73026b]"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="text-black leading-10 hover:text-[#73026b]"
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
 
-          {/* Footer Section with Icons (Mobile View) */}
-          <div className="flex justify-between space-x-8 py-4 border-t border-gray-200">
-            <div className="text-center border-r border-gray-200 w-full">
-              <FaPhoneAlt className="text-3xl text-gray-700 mx-auto" />
-              <p className="text-gray-700 mt-2">Call us</p>
-            </div>
-            <a
-              href="https://www.google.com/maps?q=A3119,+312+W+2nd+St,+Casper,+WY,+82601"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-center w-full"
-            >
-              <FaMapMarkerAlt className="text-3xl text-gray-700 mx-auto" />
-              <p className="text-gray-700 mt-2">Find us</p>
-            </a>
-            <div className="text-center border-l border-gray-200 w-full">
-              <FaEnvelope className="text-3xl text-gray-700 mx-auto" />
-              <p className="text-gray-700 mt-2">Email us</p>
-            </div>
+        {/* Footer Section with Icons (Mobile View) */}
+        <div className="flex justify-between space-x-8 py-4 border-t border-gray-200">
+          <div className="text-center border-r border-gray-200 w-full">
+            <FaPhoneAlt className="text-3xl text-gray-700 mx-auto" />
+            <p className="text-gray-700 mt-2">Call us</p>
           </div>
-        </nav>
-
+          <a
+            href="https://www.google.com/maps?q=A3119,+312+W+2nd+St,+Casper,+WY,+82601"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-center w-full"
+          >
+            <FaMapMarkerAlt className="text-3xl text-gray-700 mx-auto" />
+            <p className="text-gray-700 mt-2">Find us</p>
+          </a>
+          <div className="text-center border-l border-gray-200 w-full">
+            <FaEnvelope className="text-3xl text-gray-700 mx-auto" />
+            <p className="text-gray-700 mt-2">Email us</p>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 }
