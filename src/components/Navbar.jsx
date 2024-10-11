@@ -42,7 +42,11 @@ function Navbar() {
 
         {/* Logo */}
         <a href="/" className="h-full">
-          <img src={Logo} className="h-full aspect-auto cursor-pointer" alt="Logo" />
+          <img
+            src={Logo}
+            className="h-full aspect-auto cursor-pointer"
+            alt="Logo"
+          />
         </a>
 
         {/* Contact Button for Desktop */}
@@ -63,27 +67,42 @@ function Navbar() {
       </nav>
 
       {/* Mobile Navigation */}
-      {openMobileNav && (
-        <nav onClick={toggleMobileNav} className="bg-white shadow-md md:hidden absolute top-[128px] left-0 right-0 ">
+
+        <nav
+          onClick={toggleMobileNav}
+          className={`bg-white shadow-md md:hidden absolute left-0 right-0 transition-all duration-1000 ${openMobileNav ? "top-[128px]" : "top-[-100%]"}`}
+        >
           <div className="flex flex-col items-center py-4 px-8 w-full">
             <ul className="space-y-4 w-full">
               <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link to="/" className="text-black leading-10  hover:text-[#73026b]">
+                <Link
+                  to="/"
+                  className="text-black leading-10  hover:text-[#73026b]"
+                >
                   Home
                 </Link>
               </li>
               <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link to="/offering" className="text-black leading-10 hover:text-[#73026b]">
+                <Link
+                  to="/offering"
+                  className="text-black leading-10 hover:text-[#73026b]"
+                >
                   Offering
                 </Link>
               </li>
               <li className="w-full border-b-[1px] border-b-gray-200">
-                <Link to="/about" className="text-black leading-10 hover:text-[#73026b]">
+                <Link
+                  to="/about"
+                  className="text-black leading-10 hover:text-[#73026b]"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-black leading-10 hover:text-[#73026b]">
+                <Link
+                  to="/contact"
+                  className="text-black leading-10 hover:text-[#73026b]"
+                >
                   Contact
                 </Link>
               </li>
@@ -96,17 +115,22 @@ function Navbar() {
               <FaPhoneAlt className="text-3xl text-gray-700 mx-auto" />
               <p className="text-gray-700 mt-2">Call us</p>
             </div>
-            <div className="text-center w-full">
+            <a
+              href="https://www.google.com/maps?q=A3119,+312+W+2nd+St,+Casper,+WY,+82601"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center w-full"
+            >
               <FaMapMarkerAlt className="text-3xl text-gray-700 mx-auto" />
               <p className="text-gray-700 mt-2">Find us</p>
-            </div>
+            </a>
             <div className="text-center border-l border-gray-200 w-full">
               <FaEnvelope className="text-3xl text-gray-700 mx-auto" />
               <p className="text-gray-700 mt-2">Email us</p>
             </div>
           </div>
         </nav>
-      )}
+
     </div>
   );
 }

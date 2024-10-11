@@ -28,7 +28,9 @@ const Contact = () => {
     <div className="w-full flex flex-col py-12">
       <div className="flex flex-col justify-center items-center gap-8 text-center">
         <span className="text-[#73026b] font-bold text-[16px]">CONTACT US</span>
-        <span className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] font-bold text-[#333]">Contact Us</span>
+        <span className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] font-bold text-[#333]">
+          Contact Us
+        </span>
         <span className="text-[34px] font-bold text-[#333] mt-[-24px] max-w-[1000px] ">
           Contact us for more information about our top-of-the-line
           cyber-security services.
@@ -40,13 +42,14 @@ const Contact = () => {
             Our Contact Info
           </span>
           <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
-            <li>416 887 5555</li>
-            <li>123 address st.</li>
+            <li>A3119, 312 W 2nd St</li>
+            <li>Casper, WY, Wyoming, US, 8260</li>
+
             <li>email@example.com</li>
-            <li>yourwebsite.com</li>
+            <li>0daysecurity.io</li>
           </ul>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.073935149137!2d-80.49253342449052!3d43.45163867165552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf41a07d0bbf5%3A0x4923c3504be50b5c!2sVictoria%20Park%2C%20Kitchener%2C%20ON!5e0!3m2!1sen!2sca!4v1696754700611!5m2!1sen!2sca"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.108155454384!2d-106.33164712468219!3d42.84944940404445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760bca480ca44a5%3A0xbbd69ee80d167ecc!2s312%20W%202nd%20St%20a3119%2C%20Casper%2C%20WY%2082601%2C%20USA!5e0!3m2!1sen!2sng!4v1728637906292!5m2!1sen!2sng"
             width="100%"
             height="450"
             allowfullscreen=""
@@ -54,7 +57,6 @@ const Contact = () => {
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-
         <form
           className="mx-auto p-4 w-full md:w-2/3 bg-white rounded-sm"
           onSubmit={handleSubmit}
@@ -165,7 +167,7 @@ const Contact = () => {
       <div className="bg-transparent w-full py-12 flex flex-col justify-center items-center text-center gap-3">
         <span className="text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[45px] text-black font-semibold max-w-[800px] px-8">
           Contact us for more information about our top-of-the-line
-          cyber-security services. 
+          cyber-security services.
         </span>
         <Link
           to="/contact"
