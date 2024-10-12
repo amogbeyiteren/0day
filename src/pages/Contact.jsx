@@ -25,7 +25,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full flex flex-col py-12">
+    <div id="contact" className="w-full flex flex-col py-12">
       <div className="flex flex-col justify-center items-center gap-8 text-center">
         <span className="text-[#73026b] font-bold text-[16px]">CONTACT US</span>
         <span className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] font-bold text-[#333]">
@@ -170,7 +170,7 @@ const Contact = () => {
           cyber-security services.
         </span>
         <Link
-          to="/contact"
+          to="#contact"
           className="w-[170px] h-[50px] bg-[#73026b] hover:opacity-70 text-white text-[15px] font-bold rounded-sm flex justify-center items-center"
         >
           Contact Us
