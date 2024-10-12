@@ -169,12 +169,12 @@ const Contact = () => {
           Contact us for more information about our top-of-the-line
           cyber-security services.
         </span>
-        <Link
-          to="#contact"
+        <a
+          href="#contact"
           className="w-[170px] h-[50px] bg-[#73026b] hover:opacity-70 text-white text-[15px] font-bold rounded-sm flex justify-center items-center"
         >
           Contact Us
-        </Link>
+        </a>
       </div>
     </div>
   );
