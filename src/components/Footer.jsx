@@ -74,7 +74,7 @@ function Footer() {
         </li>
         <li>
           <a href="#" className="text-black hover:text-[#73026b]">
-            NavLinkedin
+            Linkedin
           </a>
         </li>
       </ul>
