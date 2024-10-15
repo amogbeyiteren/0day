@@ -82,8 +82,8 @@ function Footer() {
         <li>A3119, 312 W 2nd St</li>
         <li>Casper, WY, Wyoming, US, 8260</li>
 
-        <li>email@example.com</li>
-        <li>0daysecurity.io</li>
+        <li> <a href="mailto:support@0daysecurity.io">support@0daysecurity.io</a></li>
+        <li><a href='#'>0daysecurity.io</a></li>
       </ul>
     </footer>
   );

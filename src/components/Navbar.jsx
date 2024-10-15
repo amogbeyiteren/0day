@@ -146,10 +146,10 @@ function Navbar() {
             <FaMapMarkerAlt className="text-3xl text-gray-700 mx-auto" />
             <p className="text-gray-700 mt-2">Find us</p>
           </a>
-          <div className="text-center border-l border-gray-200 w-full">
+          <a href="mailto:support@0daysecurity.io" className="text-center border-l border-gray-200 w-full">
             <FaEnvelope className="text-3xl text-gray-700 mx-auto" />
             <p className="text-gray-700 mt-2">Email us</p>
-          </div>
+          </a>
         </div>
       </nav>
     </div>

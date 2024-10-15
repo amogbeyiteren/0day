@@ -44,9 +44,8 @@ const Contact = () => {
           <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
             <li>A3119, 312 W 2nd St</li>
             <li>Casper, WY, Wyoming, US, 8260</li>
-
-            <li>email@example.com</li>
-            <li>0daysecurity.io</li>
+            <li> <a href="mailto:support@0daysecurity.io">support@0daysecurity.io</a></li>
+            <li><a href='#'>0daysecurity.io</a></li>
           </ul>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.108155454384!2d-106.33164712468219!3d42.84944940404445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760bca480ca44a5%3A0xbbd69ee80d167ecc!2s312%20W%202nd%20St%20a3119%2C%20Casper%2C%20WY%2082601%2C%20USA!5e0!3m2!1sen!2sng!4v1728637906292!5m2!1sen!2sng"
