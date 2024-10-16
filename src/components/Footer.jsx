@@ -57,9 +57,9 @@ function Footer() {
       </ul>
 
       <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
-        <li>
-          <a href="#" className="text-black hover:text-[#73026b]">
-            Facebook
+      <li>
+          <a target="_blank" href="https://www.linkedin.com/company/0-daysecurity/" className="text-black hover:text-[#73026b]">
+            Linkedin
           </a>
         </li>
         <li>
@@ -67,16 +67,17 @@ function Footer() {
             Twitter
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#" className="text-black hover:text-[#73026b]">
             Instagram
           </a>
         </li>
         <li>
           <a href="#" className="text-black hover:text-[#73026b]">
-            Linkedin
+            Facebook
           </a>
-        </li>
+        </li> */}
+        
       </ul>
       <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
         <li>A3119, 312 W 2nd St</li>

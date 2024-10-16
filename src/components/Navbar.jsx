@@ -133,10 +133,10 @@ function Navbar() {
 
         {/* Footer Section with Icons (Mobile View) */}
         <div className="flex justify-between space-x-8 py-4 border-t border-gray-200">
-          <div className="text-center border-r border-gray-200 w-full">
+          <a href="tel:+14434036113" className="text-center border-r border-gray-200 w-full">
             <FaPhoneAlt className="text-3xl text-gray-700 mx-auto" />
             <p className="text-gray-700 mt-2">Call us</p>
-          </div>
+          </a>
           <a
             href="https://www.google.com/maps?q=A3119,+312+W+2nd+St,+Casper,+WY,+82601"
             target="_blank"
