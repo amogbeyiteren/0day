@@ -28,7 +28,7 @@ const Offering = () => {
 
       {/* <div className="w-full flex flex-col py-12 px-4 gap-8 text-center">
         <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-          <img src={image1} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+          <img src={image1} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
           <div className="flex flex-col gap-4">
             <span  className="font-bold text-[25px] text-[#333]">
             Exceptional IT professionals
@@ -39,7 +39,7 @@ const Offering = () => {
           </div>
         </div>
         <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-          <img src={image2} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+          <img src={image2} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
           <div className="flex flex-col gap-4">
             <span className="font-bold text-[25px] text-[#333]">
             Reliable support
@@ -50,7 +50,7 @@ const Offering = () => {
           </div>
         </div>
         <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-          <img src={image3} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+          <img src={image3} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
           <div className="flex flex-col gap-4">
             <span className="font-bold text-[25px] text-[#333]">
               Various cybersecurity services
@@ -65,7 +65,7 @@ const Offering = () => {
       <div className="w-full flex flex-col py-12 px-4 gap-8 text-center">
   {/* Item 1 - vCISO */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image1} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image1} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">vCISO (Virtual Chief Information Security Officer)</span>
       <span className="text-[18px]">
@@ -76,7 +76,7 @@ const Offering = () => {
   
   {/* Item 2 - Secure Code Review */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image2} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image2} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Secure Code Review</span>
       <span className="text-[18px]">
@@ -87,7 +87,7 @@ const Offering = () => {
   
   {/* Item 3 - API Security Testing */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image3} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image3} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">API Security Testing</span>
       <span className="text-[18px]">
@@ -98,7 +98,7 @@ const Offering = () => {
   
   {/* Item 4 - Fraud & Forensic Review */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image4} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image4} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Fraud & Forensic Review</span>
       <span className="text-[18px]">
@@ -109,7 +109,7 @@ const Offering = () => {
 
   {/* Item 5 - Compliance & Risk Management */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image5} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image5} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Compliance & Risk Management</span>
       <span className="text-[18px]">
@@ -120,7 +120,7 @@ const Offering = () => {
   
   {/* Item 6 - Vulnerability Assessment & Penetration Testing */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image6} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image6} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Vulnerability Assessment & Penetration Testing</span>
       <span className="text-[18px]">
@@ -131,7 +131,7 @@ const Offering = () => {
 
   {/* Item 7 - Internal Control & Technology Audit */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image7} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image7} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Internal Control & Technology Audit</span>
       <span className="text-[18px]">
@@ -142,7 +142,7 @@ const Offering = () => {
   
   {/* Item 8 - Incident Response Retainer */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image8} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image8} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Incident Response Retainer</span>
       <span className="text-[18px]">
@@ -153,7 +153,7 @@ const Offering = () => {
 
   {/* Item 9 - Cloud Security Services */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image9} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image9} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">Cloud Security Services</span>
       <span className="text-[18px]">
@@ -164,7 +164,7 @@ const Offering = () => {
 
   {/* Item 10 - KYC Risk & Control Self Assessments */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image10} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image10} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">KYC Risk & Control Self Assessments</span>
       <span className="text-[18px]">
@@ -175,7 +175,7 @@ const Offering = () => {
 
   {/* Item 11 - ISO Standards Review & Implementation */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row min-h-[400px] flex-1 bg-white">
-    <img src={image11} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image11} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">ISO Standards Review & Implementation</span>
       <span className="text-[18px]">
@@ -186,7 +186,7 @@ const Offering = () => {
 
   {/* Item 12 - PCI DSS Implementation & Compliance */}
   <div className="flex justify-center items-start md:items-center text-start p-4 md:p-8 gap-1 md:gap-16 flex-col md:flex-row-reverse min-h-[400px] flex-1 bg-white">
-    <img src={image12} className="h-[300px] w-full md:w-3/5 md:h-[400px]" />
+    <img src={image12} className="h-[250px] w-full md:w-3/5 md:h-[400px]" />
     <div className="flex flex-col gap-4">
       <span className="font-bold text-[25px] text-[#333]">PCI DSS Implementation & Compliance</span>
       <span className="text-[18px]">
