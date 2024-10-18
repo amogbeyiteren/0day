@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from "../assets/logo2.png";
+import Logo from "../assets/0day-security-logo2.png";
 
 function Footer() {
   return (

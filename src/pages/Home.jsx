@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image1 from "../assets/home-1.jpg";
-import image2 from "../assets/service-1.jpg";
-import image3 from "../assets/service-2.jpg";
-import image4 from "../assets/service-3.jpg";
+import image1 from "../assets/0day-security-home-1.jpg";
+import image2 from "../assets/0day-security-service-1.jpg";
+import image3 from "../assets/0day-security-service-2.jpg";
+import image4 from "../assets/0day-security-service-3.jpg";
 
 const Home = () => {
   return (

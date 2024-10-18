@@ -3,7 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { CiMenuBurger } from "react-icons/ci";
-import Logo from "../assets/logo1.png";
+import Logo from "../assets/0day-security-logo1.png";
 
 function Navbar() {
   const [openMobileNav, setOpenMobileNav] = useState(false);
