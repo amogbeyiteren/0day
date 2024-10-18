@@ -112,6 +112,7 @@ const Contact = () => {
               placeholder="First Name"
               value={formData.firstName}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -129,6 +130,7 @@ const Contact = () => {
               placeholder="Last Name"
               value={formData.lastName}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -146,6 +148,7 @@ const Contact = () => {
               placeholder="Email"
               value={formData.email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -163,6 +166,7 @@ const Contact = () => {
               placeholder="Phone Number"
               value={formData.phone}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="mb-4">
@@ -180,6 +184,7 @@ const Contact = () => {
               placeholder="Leave a message..."
               value={formData.message}
               onChange={handleChange}
+              required
             ></textarea>
           </div>
           <div className="flex items-center justify-between md:mb-48">
