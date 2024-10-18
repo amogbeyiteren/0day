@@ -11,17 +11,46 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission (e.g., send data to server)
-    console.log(formData);
+
+    // Define the parameters to be sent to EmailJS
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    };
+
+    // Replace with your EmailJS credentials
+    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+    // Send email using EmailJS
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
+      (response) => {
+        console.log("Email successfully sent!", response.status, response.text);
+        alert("Message sent successfully!");
+      },
+      (err) => {
+        console.log("Failed to send email. Error:", err);
+        alert("Failed to send message. Please try again.");
+      }
+    );
+
+    // Reset form fields
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
 
   return (
@@ -44,8 +73,15 @@ const Contact = () => {
           <ul className="flex flex-col text-[15px] font-bold justify-start gap-5 py-10">
             <li>A3119, 312 W 2nd St</li>
             <li>Casper, WY, Wyoming, US, 8260</li>
-            <li> <a href="mailto:support@0daysecurity.io">support@0daysecurity.io</a></li>
-            <li><a href='#'>0daysecurity.io</a></li>
+            <li>
+              {" "}
+              <a href="mailto:support@0daysecurity.io">
+                support@0daysecurity.io
+              </a>
+            </li>
+            <li>
+              <a href="#">0daysecurity.io</a>
+            </li>
           </ul>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2925.108155454384!2d-106.33164712468219!3d42.84944940404445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8760bca480ca44a5%3A0xbbd69ee80d167ecc!2s312%20W%202nd%20St%20a3119%2C%20Casper%2C%20WY%2082601%2C%20USA!5e0!3m2!1sen!2sng!4v1728637906292!5m2!1sen!2sng"
