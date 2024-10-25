@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,19 +30,20 @@ const Contact = () => {
     };
 
     // Replace with your EmailJS credentials
-    const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const USER_ID = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    
 
     // Send email using EmailJS
-    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY).then(
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
       (response) => {
         console.log("Email successfully sent!", response.status, response.text);
-        alert("Message sent successfully!");
+        toast.success("Message sent successfully!");
       },
       (err) => {
         console.log("Failed to send email. Error:", err);
-        alert("Failed to send message. Please try again.");
+        toast.error("Failed to send message. Please try again.");
       }
     );
 
@@ -56,6 +59,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="w-full flex flex-col py-12">
+      <ToastContainer position="top-right" autoClose={3000} hideProgressBar />
       <div className="flex flex-col justify-center items-center gap-8 text-center">
         <span className="text-[#73026b] font-bold text-[16px]">CONTACT US</span>
         <span className="text-[30px] sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[70px] font-bold text-[#333]">
