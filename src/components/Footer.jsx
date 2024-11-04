@@ -63,8 +63,8 @@ function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" className="text-black hover:text-[#73026b]">
-            Twitter
+          <a target="_blank" href="https://x.com/0_daysecurity" className="text-black hover:text-[#73026b]">
+          X
           </a>
         </li>
         {/* <li>
